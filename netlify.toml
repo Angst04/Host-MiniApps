@@ -1,4 +1,5 @@
 [[redirects]]
-   from = "/*"
-   to = "https://delicate-toffee-ec2c68.netlify.app/"
+   from = "/api/*"
+   to = "https://delicate-toffee-ec2c68.netlify.app/:splat"
    status = 200
+   force = true
