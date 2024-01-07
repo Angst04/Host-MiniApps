@@ -1,5 +1,4 @@
 [[redirects]]
-force = true
-from = "/api/*"
-status = 200
-to = "http://localhost:5000/:splat"
+   from = "/*"
+   to = "/index.html"
+   status = 200
