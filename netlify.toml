@@ -1,4 +1,4 @@
 [[redirects]]
    from = "/*"
-   to = "/index.html"
+   to = "https://delicate-toffee-ec2c68.netlify.app/"
    status = 200
