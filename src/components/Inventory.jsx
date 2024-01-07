@@ -12,6 +12,7 @@ const Inventory = () => {
       try {
          const { data } = await axios.get('https://52a7-2a00-1370-817a-1b6c-45aa-9365-3656-72b6.ngrok-free.app/api/inventory/getInventory/1006757651')
          setInventory(data.cards)
+         console.log(data)
       } catch (e) {
          console.log(e)
       }
@@ -31,7 +32,7 @@ const Inventory = () => {
       <div className='Inventory'>
          <h1 className='inventory-title'>Inventory</h1>
          <div className="cards-container">
-            {inventory && inventory.map && inventory.map((card) => (
+            {inventory.map((card) => (
                <button onClick={() => sendID(card.id)} key={card.id} className="card">
                   <img className='card-image' src={card.imagePath} alt="" />
                   <h3 className='card-title'>{card.title}</h3>
