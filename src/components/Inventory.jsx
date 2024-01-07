@@ -31,7 +31,7 @@ const Inventory = () => {
       <div className='Inventory'>
          <h1 className='inventory-title'>Inventory</h1>
          <div className="cards-container">
-            {inventory.map((card) => (
+            {inventory && inventory.map && inventory.map((card) => (
                <button onClick={() => sendID(card.id)} key={card.id} className="card">
                   <img className='card-image' src={card.imagePath} alt="" />
                   <h3 className='card-title'>{card.title}</h3>
