@@ -12,7 +12,7 @@ const Inventory = () => {
       try {
          const { data } = await axios.get('https://carddrafter.ru/api/inventory/getInventory/1006757651')
          setInventory(data.cards)
-         console.log(data.cards)
+         console.log(`Содержимое: ${data.cards}`)
       } catch (e) {
          console.log(e)
       }
