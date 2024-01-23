@@ -10,7 +10,7 @@ const Inventory = () => {
 
    const getInventory = async () => {
       try {
-         const { data } = await axios.get('https://ca31-5-35-5-39.ngrok-free.app/api/inventory/getInventory/1006757651')
+         const { data } = await axios.get('https://carddrafter.ru/api/inventory/getInventory/1006757651')
          setInventory(data.cards)
          console.log(data.cards)
       } catch (e) {
